@@ -1,0 +1,310 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('img/allback2.png'), linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-image: url('img/header1.png'); /* 設置背景圖片 */
+    background-size: cover; /* 確保圖片覆蓋整個 header 區域 */
+    background-position: center; /* 圖片置中 */
+    background-repeat: no-repeat; /* 防止背景圖片重複 */
+}
+.goodword:hover{
+    transform: scale(1.2);
+    color: #c46c96;
+    text-decoration:underline;
+    transition: transform 0.3s ease;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.right-image {
+    max-width: 200px;
+    margin-left: 10px;
+}
+.right-image:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.left-links {
+    display: flex;
+    gap: 15px;
+}
+.igimg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.threadsimg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-image: url('img/back.png');
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    font-style: italic;
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f1921e;
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.about {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-image: url('img/back.png');
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    margin-left: -100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile-photo:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+section {
+    font-style: italic;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-image: url('img/back.png');
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; /* 置中排列 */
+    gap: 20px; /* 控制每張圖片之間的距離 */
+    flex-wrap: wrap; /* 當視窗寬度不足時，自動換行 */
+}
+
+.skill-image-container {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.skill-image-container img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* 進度條樣式 */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-image-container:hover .progress-container {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: #b661cc;
+    transition: width 1.5s ease;
+}
+
+.skill-image-container:hover .progress-bar::before {
+    width: var(--progress-width);
+}
+
+.progress-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+.skill1:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.skill2:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.skill3:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-image-container {
+    position: relative;
+    text-align: center;
+}
+.description {
+    display: none;
+    position: absolute;
+    bottom: -30px; /* 調整這個數值來控制描述的垂直位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.8); /* 增加背景顏色讓文字更明顯 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* 鼠標移動到圖片上時顯示描述 */
+.skill-image-container:hover .description {
+    display: block;
+}
+
+.choice {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #acc8e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2c6eb6;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.content {
+    display: none;
+}
+.hobbimg {
+    display: block; 
+    margin: 20px auto;
+}
+.eximg1:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.eximg2:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.eximg3:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.hobbimg:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.exlink{
+    color: #c46c96;
+    display: inline-block; 
+}
+.exlink:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+h1, h2, h3 ,h4{
+    text-align: center;
+    font-style: italic;
+}
+.scroll-to-top:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; /* 平滑過渡效果 */
+}
+
+footer {
+    text-align: center;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}

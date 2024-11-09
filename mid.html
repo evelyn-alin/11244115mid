@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游舒僅的個人網站</title>
+    <link rel="stylesheet" href="mid.css">
+    <style>
+        /* 右下角滑動至頂部按鈕樣式 */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Evelyn's Resume</h1>
+        <h3 class="goodword">#相信自己就一定能做到</h3>
+        <div class="link">
+            <div class="left-links">
+                <a href="https://www.instagram.com/rin.__8/" target="_blank" class="igimg">
+                    <img src="img/ig.png" alt="Instagram" width="60px" height="60px" >
+                </a>
+                <a href="https://www.threads.net/@rin.__8?xmt=AQGzRdaERi7qh4qSfm1znxi8EgkN-xwSssV0usbpt6QtQnU" target="_blank" class="threadsimg">
+                    <img src="img/threads .png" alt="Threads" width="60px" height="60px">
+                </a>
+            </div>
+            <img src="img/1.png" alt="Main Image" class="right-image" height="200px">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#skill">SKILL</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#hobbies">HOBBIES</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>ABOUT</h2>
+        <div class="about-content">
+            <div class="about-text" style="padding-left: 50px;">
+                <p>Chinese Name: 游舒僅</p>
+                <p>English Name: Evelyn</p>
+                <p>Birth day: 2004/11/23</p>
+                <p>Hobbies: 畫畫、睡覺、看影片</p>
+            </div>
+            <img src="img/me.jpg" alt="My Photo" class="profile-photo">
+        </div>
+    </section>
+
+    <section id="skill">
+        <h2>SKILL:</h2> 
+        <div class="skills-container">
+            <div class="skill-image-container">
+                <img src="img/21.png" alt="" height="150px" width="150px" class="skill1">
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="70"></div>
+                    <span class="progress-text">70%</span>
+                </div>
+                <div class="description">我學習最久的技能</div>
+            </div>
+            <div class="skill-image-container">
+                <img src="img/22.png" alt="" height="150px" width="150px" class="skill2">
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="60"></div>
+                    <span class="progress-text">60%</span>
+                </div>
+                <div class="description">普通但還有很多功能在等我挖掘</div>
+            </div>
+            <div class="skill-image-container">
+                <img src="img/23 .png" alt="" height="150px" width="150px" class="skill3">
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="60"></div>
+                    <span class="progress-text">60%</span>
+                </div>
+                <div class="description">第一款開始學習的程式語言</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="choice">
+            <h2>EXPERIENCE:</h2>
+            <button onclick="showContent('education')">EDUCATION</button>
+            <button onclick="showContent('execution')">EXECUTIVE</button>
+            <button onclick="showContent('program')">PROGRAM</button>
+        </div>
+        
+        <div id="education" class="content" style="display: flex; padding-left: 50px; align-items: flex-start; gap: 20px;">
+            <div style="flex: 1;">
+                <h3>EDUCATION:</h3>
+                <p>國小：上海台商子女學校</p>
+                <p>我從出生到小學畢業都是待在大陸</p>
+                <p>國高中：達人女中國中部</p>
+                <p>最青春的6年都奉獻給了達人女中</p>
+                <p>大學：中原大學資管系</p>
+                <p>正在努力中！</p>
+            </div>
+            <img src="img/31.jpg" alt="Education Image" style="width: 300px; height: auto; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" class="eximg1">
+        </div>
+    
+        <div id="execution" class="content" style="display: flex; padding-left: 50px; align-items: flex-start; gap: 20px;">
+            <div style="flex: 1;">
+                <h3>EXECUTIVE:</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;各種因緣巧合之下我來到良善宿舍擔任宿舍委員的樓長，雖然有時很辛苦但我也因此認識很多人，在這個過程中我開始意識到我想要成為一個更加厲害、能幫助到更多人的人。</p>
+            </div>
+            <img src="img/32.jpg" alt="Executive Image" style="width: 300px; height: auto; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" class="eximg2">
+        </div>
+    
+        <div id="program" class="content" style="display: flex; padding-left: 50px; align-items: flex-start; gap: 20px;">
+            <div style="flex: 1;">
+                <h3>PROGRAM:</h3>
+                &nbsp;&nbsp;&nbsp;&nbsp; 大一的管理學很榮幸認識了一群同學和學姊，在討論過後我們決定一起去海邊淨灘，在活動過後我們把當天的過程剪輯成影片後投稿了2024年跨域合作美感設計競賽並獲得了<u>數位媒體組的第三名</u>! <br>
+                <span><a href="https://youtu.be/Rm-fRVvt_w0?si=n6W5xsxfAN29HWhB" class="exlink">淨灘活動影片</a>
+            </div>
+            <img src="img/33.jpg" alt="Program Image" style="width: 300px; height: auto; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" class="eximg3">
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h1>HOBBIES:</h1>
+        <div style="padding-left: 50px;">
+            <p>我是一個滿宅的人</p>
+            <p>從音樂到美術、從遊戲到動畫</p>
+            <p>我從高中的時候開始喜歡畫畫，直到現在都還是喜歡，我總是能從畫畫中獲得快樂！</p>
+        </div>
+        <img src="img/24.jpg" alt="" width="300px" style="padding-left: 50px;" class="hobbimg">
+    </section>
+    
+    <footer>
+        <p style="color: rgb(210, 102, 201);">............................................................................................................</p>
+        <a href="mailto:sirius417625@gmail.com"subject="意見" style="color: #c46c96;">寫信給我</a><br>
+        <i class="fa fa-copyright" aria-hidden="true" >copyright@Evelyn/2025</i>
+    </footer>
+
+    <img src="img/up.png" class="scroll-to-top" alt="返回頂部" onclick="scrollToTop()" />
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+            showContent('education'); 
+        };
+
+        function showContent(section) {
+            document.querySelectorAll('.content').forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(section).style.display = 'flex';
+        }
+
+        // 返回頂部的 JavaScript 函數
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            bar.style.setProperty('--progress-width', `${progress}%`);
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
