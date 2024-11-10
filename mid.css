@@ -111,8 +111,9 @@ nav a:hover {
 .about-text {
     flex: 1;
     margin-right: 10px;
-    font-style: italic;
+    font-style: normal; 
 }
+
 
 .profile-photo {
     width: 150px;
@@ -127,7 +128,6 @@ nav a:hover {
 }
 
 section {
-    font-style: italic;
     background-color: white;
     padding: 20px;
     border-radius: 15px;
@@ -136,7 +136,9 @@ section {
     background-image: url('img/back.png');
     background-size: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: normal; 
 }
+
 
 .skills-container {
     display: flex;
@@ -264,10 +266,7 @@ button:hover {
 .content {
     display: none;
 }
-.hobbimg {
-    display: block; 
-    margin: 20px auto;
-}
+
 .eximg1:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -292,9 +291,27 @@ button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+.hobbies-images {
+    padding-left: 25%;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+.hobbies-images2 {
+    padding-left: 23%;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.hobbimg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.hobbimg2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 h1, h2, h3 ,h4{
     text-align: center;
-    font-style: italic;
+    font-style:normal;
 }
 .scroll-to-top:hover {
     transform: scale(1.2); 
